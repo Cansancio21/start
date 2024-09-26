@@ -37,10 +37,10 @@ h1 {
   font-family: sans-serif;
   margin-right: 200px;
   margin-top: 15px;
-}
+} 
 
 .logos span {
-  color: rgb(26, 224, 142);
+  color: #edf1f0;
 }
 
 .sidebar nav ul {
@@ -137,13 +137,13 @@ h1 {
 }
 
 .add-note i {
-  margin-left: -1110px;
+  margin-left: -1000px;
 }
 
 .notes-grid {
   height: -200px;
   display: grid;
-  gap: 50px;
+  gap: 30px;
   display: inline-flex;
   margin-bottom: 40px;
   width: 1200px;
@@ -170,7 +170,7 @@ select {
 .divider {
   margin-top: 40px;
   width: 90px;
-  margin-left: -460px;
+  margin-left: -370px;
   height: 3.5px;
   background-color: #0aaa67;
   display: inline-block;

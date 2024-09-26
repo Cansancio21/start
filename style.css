@@ -6,9 +6,25 @@
 }
 
 .wrap {
-  width: 120%;
-  height: 950px;
+  width: 100%; 
+  height: 100vh; 
+}
+
+body {
   display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  margin: 0 auto; 
 }
 
 h1 {
@@ -18,6 +34,8 @@ h1 {
   font-weight: 1000;
   color: #000;
 }
+
+
 
 span {
   color: #00d1ac;
@@ -33,6 +51,7 @@ span {
 .nav a {
   padding-right: 30px;
 }
+
 .logo {
   position: fixed;
   width: 100%;
@@ -41,23 +60,28 @@ span {
   left: 0;
   padding: 2.5rem 2%;
   padding-left: 2.5%;
-
   display: flex;
 }
 
 .form {
   margin-top: 150px;
-  padding-left: 550px;
+  padding-left: 160px; 
+  max-width: 700px;
+  width: 100%; 
 }
+
 .form input[type="text"],
 .form input[type="password"] {
-  width: 350px;
+  width: 90%; 
   padding: 12px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+  border: solid 1px;
+  
 }
+
 .form label {
   font-size: 14px;
   color: #000;
@@ -66,27 +90,32 @@ span {
   text-align: left;
   margin-left: 10px;
 }
+
 .form .checkbox {
   display: flex;
   align-items: center;
   justify-content: left;
-  margin-left: 20%;
+  margin-left: 0; 
   margin-top: -5px;
 }
+
 .form .checkbox input {
-  margin-right: -90px;
+  margin-right: 0; 
   margin-top: -5px;
 }
+
 .form .forgot-password {
   text-align: right;
-  margin-right: 5%;
+  margin-right: 50px; 
   margin-top: -20px;
   font-size: 14px;
 }
+
 .form .forgot-password a {
-  color: #5c5c5c;
+  color: #223fe4;
   text-decoration: none;
 }
+
 .form .forgot-password a:hover {
   text-decoration: underline;
 }
@@ -99,15 +128,75 @@ span {
   font-weight: 700px;
   font-size: 50px;
   align-items: center;
-  margin-left: 70px;
+  margin-left: 120px; 
 }
 
 .button .btn {
-  width: 300px;
+  width: 50%; 
   height: 40px;
   margin-top: 35px;
   background-color: #00d1ac;
   color: whitesmoke;
-  margin-left: 25px;
+  margin-left: 95px; 
   border-radius: 10px;
+}
+
+
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .form input[type="text"],
+  .form input[type="password"] {
+    width: 100%;
+  }
+
+  .button .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .form {
+    padding: 15px;
+  }
+
+  .form input[type="text"],
+  .form input[type="password"] {
+    width: 100%;
+  }
+
+  .button .btn {
+    width: 60%;
+    margin-left: 70px;
+  }
+  .form h2{
+    margin-left: 90px;
+  }
+
+  .nav {
+    margin-left: -670px;
+    display: flex;
+    font-size: 15px;
+    margin-top: -5px;
+    
+  }
+
+  .form .forgot-password a {
+    margin-right: -40px;
+  }
+  
+
 }
