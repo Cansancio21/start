@@ -141,11 +141,11 @@ h1 {
 }
 
 .notes-grid {
-  height: -200px;
+  height: -150px;
   display: grid;
   gap: 30px;
   display: inline-flex;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   width: 1200px;
 }
 
@@ -170,7 +170,7 @@ select {
 .divider {
   margin-top: 40px;
   width: 90px;
-  margin-left: -370px;
+  margin-left: -550px;
   height: 3.5px;
   background-color: #0aaa67;
   display: inline-block;
@@ -193,5 +193,57 @@ select {
   background-color: #ffba08;
 }
 
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 98vh; 
+    z-index: 0;
+   
+  }
+  .main-content {
+    flex: 1;
+  }
+  .notes-grid {
+    width: 300px;
+    max-height: 800px;
+    flex-direction: column;
+    margin-left: 200px;
+
+  } 
+  .search input {
+    margin-right: 80px;
+    width: 100px;
+  }
+  .divider {
+    margin-left: -130px;
+  }
+  h1 {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .add-note i {
+    margin-left: -200px;
+  }
+
+  .header h2{
+    margin-left: 180px;
+  }
+
+    
+    .sidebar .user {
+      margin-top: 30px; 
+    }
+    .sidebar .status {
+      margin-left: 30px;
+    
+    }
+  
+  }
 
 

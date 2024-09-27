@@ -162,10 +162,15 @@ h2{
 }
 
 .nav {
-  margin-left: -760px;
+  margin-left: 170px; 
   display: flex;
   font-size: 15px;
-    
+  padding: 20px;  
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 75%; 
+  z-index: 1; 
 }
 
 .image {
@@ -176,7 +181,7 @@ h2{
 
   
 
-} 
+}
 
 
   
