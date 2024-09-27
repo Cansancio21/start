@@ -100,14 +100,14 @@ h2 {
 @media (max-width: 600px) {
   .text-container {
     width: 100%;
-    height: 70vh;
-    margin-left: 50px;
-    margin-top: -400px;
+    height: 60vh;
+    margin-left: 55px;
+    margin-top: -35px;
   }
 
   .image {
     padding-left: 80px;
-    padding-top: 170px;
+    margin-top: -80px;
   }
 
   h2 {
@@ -115,7 +115,7 @@ h2 {
   }
 
   .nav {
-    margin-left: -650px;
+    margin-left: -665px;
     display: flex;
     font-size: 15px;
     margin-top: -5px;
